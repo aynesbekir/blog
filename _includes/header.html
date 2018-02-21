@@ -1,0 +1,69 @@
+<!-- Header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}    
+    {% if page.author %}
+    <meta name="author" content="{{ page.author }}">
+    {% endif %}
+
+    <title>{{ page.title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ site.baseurl }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ site.baseurl }}/css/clean-blog.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    {% include nav.html %}
+
+    <header class="nav-bar" {% if page.url == "/" %}style="height: 110px !important"{% endif %}></header>
+    
+    {% unless page.index %}
+    <div class="jumbotron jumbotron-fluid mb-0" {% if page.url == "/about.html" or page.url == "/contact.html" %}style="height: 220px !important"{% endif %}>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <h1 class="display-3">{{page.title}}</h1>
+                    <p class="lead">
+                        {{page.subtitle}}
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    {% endunless %}
+
+    {% if page.blogpost %}    
+        {% for post in site.posts %}
+            <header class="jumbotron jumbotron-fluid article-header">
+                <div class="container header-text-outer px-0">
+                    <div class="col-12 col-lg-10 offset-lg-1 col-xl-9 offset-xl-2 header-text-inner">
+                        <h1 class="article-title"> {{ post.title }}</h1>
+                            <h4>
+                                <span class="text-muted">{{ post.subtitle }}</span>
+                            </h4>
+                        <small class="article-metadata text-muted mt-4 d-none d-md-block">
+                            Published on
+                            <time class="article-date">
+                                {{ post.date | date_to_string }}
+                            </time>
+                        </small>
+                    </div>
+                </div>
+            </header>   
+        {% endfor %}     
+    {% endif %}
+  
