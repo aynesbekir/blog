@@ -20,7 +20,7 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "https://formsubmit.io/send/aynes.bekir@gmail.com",
+        url: "https://hooks.zapier.com/hooks/catch/2994073/z0w4qv/",
         type: "POST",
         data: {
           name: name,
@@ -28,7 +28,6 @@ $(function() {
           email: email,
           message: message
         },
-        dataType: "jsonp",
         cache: false,
         success: function() {
           // Success message
@@ -36,7 +35,7 @@ $(function() {
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
           $('#success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
+            .append("<strong>Thank you for contacting me! I will be in touch with you shortly.</strong>");
           $('#success > .alert-success')
             .append('</div>');
           //clear all fields

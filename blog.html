@@ -3,31 +3,33 @@ layout: default
 title: "Blog"
 subtitle: "A blog about the experiences of a young female professional, making exciting movements in her career,
 and all the challenges she is facing along the way."
+author: "Aynes Bekir"
+description: "A blog about the experiences of a young female professional, making exciting movements in her career,
+and all the challenges she is facing along the way."
 ---
-
-<!--Main Content-->
-<div class="container px-0 pt-3">
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-      <br />
-      <h3>No blog posts yet.</h3> 
-      <br />
-      {% for post in site.posts %}
-        <div class="article col-12 col-lg-9 col-xl-auto mb-5">
-          <time class="article-date small text-muted">
-             {{ post.date | date_to_string }}
-          </time>
-          <h2 class="article-summary-title display-5 mb-3">
-              <a href="{{ post.url }}" rel="permalink">
-                  {{ post.title }}
-              </a>
-          </h2>
-          <div class="article-body article-summary">
-              <p style="margin: 0px">{{ post.description }}<a href="{{ post.url }}"> <span class="read-more" style="color:#0275d8">Read more &#8594;</span></a></p>
-          </div>
-        </div> 
-      {% endfor %}
+  <!--Main Content-->
+  <div class="container px-0 pt-3">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <br />
+        <h3>No blog posts yet.</h3> 
+        <br />
+        {% for post in site.posts %}
+          <div class="article col-12 col-lg-9 col-xl-auto mb-5">
+            <time class="article-date small text-muted">
+              {{ post.date | date_to_string }}
+            </time>
+            <h2 class="article-summary-title display-5 mb-3">
+                <a href="{{ post.url }}" rel="permalink">
+                    {{ post.title }}
+                </a>
+            </h2>
+            <div class="article-body article-summary">
+                <p style="margin: 0px">{{ post.description }}<a href="{{ post.url }}"> <span class="read-more" style="color:#0275d8">Read more &#8594;</span></a></p>
+            </div>
+          </div> 
+        {% endfor %}
+      </div>
     </div>
   </div>
-</div>
-<hr> 
+  <hr> 

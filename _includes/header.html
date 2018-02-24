@@ -3,14 +3,11 @@
 <html lang="en">
 
 <head>
+    <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    {% endif %}    
-    {% if page.author %}
-    <meta name="author" content="{{ page.author }}">
-    {% endif %}
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}    
+    {% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
 
     <title>{{ page.title }}</title>
 
@@ -24,11 +21,14 @@
 
     <!-- Custom styles for this template -->
     <link href="{{ site.baseurl }}/css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Google Analytics -->   
+    {% if jekyll.environment == 'production' %}{% include analytics.html %}{% endif %}
+    
 </head>
 <body>
     <!-- Navigation -->
     {% include nav.html %}
-
     <header class="nav-bar" {% if page.url == "/" %}style="height: 110px !important"{% endif %}></header>
     
     {% unless page.index %}
@@ -65,5 +65,4 @@
                 </div>
             </header>   
         {% endfor %}     
-    {% endif %}
-  
+    {% endif %}  

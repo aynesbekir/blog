@@ -1,3 +1,5 @@
 markdown: redcarpet
 baseurl: http://aynesbekir.com
 url: http://aynesbekir.com
+gems:
+ - jekyll-sitemap
