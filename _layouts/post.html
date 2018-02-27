@@ -2,16 +2,19 @@
 {% include header.html %}
 
 <!-- Post Content -->
-<article>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto" style="text-align:justify">
-        {{ content }}
-      </div>
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto" style="text-align:justify">
+          {{ content }}
+          {% if page.comments %}
+            {% include comments.html %}
+          {% endif %}      
+        </div>
+      </div>        
     </div>
-  </div>
-</article>
-<hr>
+  </article>
+  <hr>
 
 <!-- Footer -->
 {% include footer.html %}

@@ -1,0 +1,29 @@
+
+<div class="article-comments mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title my-1">
+            Leave your comments
+            </h4>
+        </div>
+        <div class="card-block" style="margin:3%">
+            <div id="disqus_thread"></div>
+        </div>
+    </div>
+</div>
+<br />
+<div id="disqus_thread"></div>
+<script> 
+    var disqus_config = function () {
+    this.page.url = "{{ {{site.url}}{{page.url}} }}";  
+    this.page.identifier = "{{ page.url }}";
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://aynesbekir.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
