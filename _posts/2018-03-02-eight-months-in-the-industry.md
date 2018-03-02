@@ -20,7 +20,7 @@ In this journey, there have been plenty of moments that made my pulse run up. Th
 I remember my first week in the office quite well, even though it was such a long time ago. This week was an emotional rollercoaster. New place, new people, new environment. It took a bit to get into the routine and find my feet, but it was all good once I settled in. Shout out to my colleagues who made me feel so welcome from the moment I stepped into the office. 
 
 
-<center>![First working day ever](/img/first-day.jpeg)
+<center>![First working day ever]({{ site.baseurl }}/img/first-day.jpeg)
 *This photo was taken on 3rd July, 2017 which was my first working day ever.<br />That morning I did not know what to expect and was very nervous and excited.*</center>
 
 
