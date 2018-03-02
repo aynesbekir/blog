@@ -42,12 +42,12 @@ img + em {
     display: block; text-align: center;
     font-size: .8rem;
     color: light-grey;    
+    align: middle
 }
 
-.center-image
-{
-    margin: 0 auto;
+p img {
     display: block;
+    margin: 0 auto;
 }
 
 h1,
