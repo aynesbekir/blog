@@ -6,5 +6,9 @@ kramdown:
   syntax_highlighter: rouge
 baseurl: http://aynesbekir.com
 url: http://aynesbekir.com
+author: Aynes Bekir
+title: Aynes Bekir's personal blog
+description: "A blog about the experiences of a young female professional, making exciting movements in her career,
+and all the challenges she is facing along the way."
 gems:
  - jekyll-sitemap

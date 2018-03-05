@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 
 <head>
     <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}" />
     <link rel="shortcut icon" href="">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}    
-    {% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
+    <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"> 
 
-    <title>{{ page.title }}</title>
+    <!-- Twitter data -->
+    <meta name="twitter:site" content="@18F">
+    <meta name="twitter:creator" content="@18F">
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
+
+    <!-- OpenGraph data -->
+    <meta property="og:site_name" content="18F" />   
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl }}{% else %}{{ site.image | prepend: site.baseurl }}{% endif %}" />
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ site.baseurl }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
