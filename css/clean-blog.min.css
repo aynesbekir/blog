@@ -48,7 +48,10 @@ img + em {
 p img {
     display: block;
     margin: 0 auto;
-}
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}  
 
 h1,
 h2,
@@ -226,6 +229,12 @@ header.nav-bar {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover
+}
+
+@media only screen and (max-device-width: 480px) {
+    header.nav-bar {
+        height: 57px;
+    }
 }
 
 header.masthead {
