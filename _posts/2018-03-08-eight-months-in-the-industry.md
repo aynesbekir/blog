@@ -8,8 +8,7 @@ author: "Aynes Bekir"
 description: "In my first blog post I would like to share with you my placement experience so far. When applying for a placement, little did I know about working full-time in a professional setting. Moreover, I did not anticipate that it would be so exciting, challenging and rewarding."
 comments: true
 permalink: /blog/:categories/:title/
-image: "work.jpeg"
-featuredImage: "first-working-day.jpeg"
+image: "work2.jpg"
 ---
 In my first blog post I would like to share with you my placement experience so far. When applying for a placement, little did I know about working full-time in a professional setting. Moreover, I did not anticipate that it would be so exciting, challenging and rewarding.
 <br />
@@ -21,10 +20,10 @@ In this journey, there have been plenty of moments that made my pulse run up. Th
 #### **Challenging**
 I remember my first week in the office quite well, even though it was such a long time ago. This week was an emotional rollercoaster. New place, new people, new environment. It took a bit to get into the routine and find my feet, but it was all good once I settled in. Shout out to my colleagues who made me feel so welcome from the moment I stepped into the office.
 
-![First working day ever]({{ site.baseurl }}/img/{{ page.featuredImage }})
-*This photo was taken on 3rd July, 2017 which was my first working day ever.<br />That morning I did not know what to expect and was very nervous and excited.*
+![Work]({{ site.baseurl }}/img/{{ page.image }})
+*Pair programming with one of the senior developers*
 
-Now when I look back, I see how much I have gone through and accomplished. I remember both the days when I felt very nervous and inexperienced and the productive days when I felt happy and did contribute to the company as my work had a positive impact on its performance. Working towards tight deadlines and on very complex projects was, undeniably, and is still sometimes stressful. In fact, I am sure many developers cannot forget the frustration they have felt when their first pieces of code were not working, and the many hours spent on trying to fix the bugs. But what kept me going through these moments was my passion for my job and determination to succeed.
+I did not know what to expect and was very nervious and excited on my first day at work. Now when I look back, I see how much I have gone through and accomplished. I remember both the days when I felt very nervous and inexperienced and the productive days when I felt happy and did contribute to the company as my work had a positive impact on its performance. Working towards tight deadlines and on very complex projects was, undeniably, and is still sometimes stressful. In fact, I am sure many developers cannot forget the frustration they have felt when their first pieces of code were not working, and the many hours spent on trying to fix the bugs. But what kept me going through these moments was my passion for my job and determination to succeed.
 <br />
 #### **Rewarding**
 I am halfway through my placement now and have already had many opportunities where I put into practice the knowledge I have gained at university and the skills I have acquired previously.
