@@ -8,7 +8,8 @@ author: "Aynes Bekir"
 description: "I have taken and passed the 70-533 Implementing Microsoft Azure Infrastructure Solutions exam</a> recently. The exam covers a wide range of topics related to virtual machines, cloud services, web apps etc and can seem overwhelming for many candidates. That is why I believe that good preparation is a key for passing the exam. In this blog post I will describe how I have prepared for the exam."
 comments: true
 permalink: /blog/:categories/:title/
-image: "mslogo.jpg"
+image: "mslogo.png"
+cardtype: 2
 ---
 
 I have taken and passed the <a href="https://www.microsoft.com/en-us/learning/exam-70-533.aspx" target="_blank">70-533 Implementing Microsoft Azure Infrastructure Solutions exam</a> recently. The exam covers a wide range of topics related to virtual machines, cloud services, web apps etc and can seem overwhelming for many candidates. That is why I believe that good preparation is a key for passing the exam. In this blog post I will describe how I have prepared for the exam, including the resources I have used and found useful. 

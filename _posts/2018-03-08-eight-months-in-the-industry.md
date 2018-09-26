@@ -9,6 +9,7 @@ description: "In my first blog post I would like to share with you my placement 
 comments: true
 permalink: /blog/:categories/:title/
 image: "work2.jpg"
+cardtype: 1
 ---
 In my first blog post I would like to share with you my placement experience so far. When applying for a placement, little did I know about working full-time in a professional setting. Moreover, I did not anticipate that it would be so exciting, challenging and rewarding.
 <br />
