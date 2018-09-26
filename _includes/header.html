@@ -81,22 +81,22 @@
     {% endunless %}
 
     {% if page.blogpost %}    
-        {% for post in site.posts %}
+        
             <header class="jumbotron jumbotron-fluid article-header">
                 <div class="container header-text-outer px-0">
                     <div class="col-12 col-lg-10 offset-lg-1 col-xl-9 offset-xl-2 header-text-inner">
-                        <h1 class="article-title"> {{ post.title }}</h1>
+                        <h1 class="article-title"> {{ page.title }}</h1>
                             <h4>
-                                <span class="text-muted">{{ post.subtitle }}</span>
+                                <span class="text-muted">{{ page.subtitle }}</span>
                             </h4>
                         <small class="article-metadata text-muted mt-4 d-none d-md-block">
                             Published on
                             <time class="article-date">
-                                {{ post.date | date_to_string }}
+                                {{ page.date | date_to_string }}
                             </time>
                         </small>
                     </div>
                 </div>
             </header>   
-        {% endfor %}     
+     
     {% endif %}  
